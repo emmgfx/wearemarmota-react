@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 import imgGift from '../img/gift.svg';
 
 class Home extends Component {
+    
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  
   render() {
     return (
         <React.Fragment>
@@ -37,7 +42,7 @@ class Home extends Component {
                 </svg>
             </div>
 
-            <div className="claim">
+            <div id="top" className="claim">
                 <p>
                     Diseñamos y <wbr /> desarrollamos
                     <span className="type">

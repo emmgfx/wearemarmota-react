@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 import imgLogoRedPurple from '../img/logo-red-purple.svg';
 import imgLogoRedPurpleXS from '../img/logo-red-purple-xs.svg';
@@ -24,13 +24,13 @@ class Header extends Component {
                         <div className="collapse navbar-collapse" id="navbar-menu">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <Link to="/#top" className="nav-link">Qué hacemos</Link>
+                                    <Link smooth to="/#top" className="nav-link">Qué hacemos</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/#philosophy" className="nav-link">Filosofía</Link>
+                                    <Link smooth to="/#philosophy" className="nav-link">Filosofía</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="<?php echo ($page != 'home' ? './' : ''); ?>#contact">Contacto</a>
+                                    <Link smooth to="/#contact" className="nav-link">Contacto</Link>
                                 </li>
                             </ul>
                         </div>
