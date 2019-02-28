@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="4638px" height="603px" viewBox="0 0 4638 603" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Section 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BG_IMG">
+            <g id="Section-1" transform="translate(-41.000000, -776.000000)">
+                <path d="M50.2469885,1143.07672 C356.237886,1179.05511 571.940583,1235.25562 697.355078,1311.67826 C929.204937,1452.95841 1165.76668,1395.73162 1213.98425,1363.03929 C1412.64275,1228.34543 1682.24573,1202.48278 1881.9649,1275.81497 C2532.70494,1514.75146 2777.36251,1099.89864 2913.38087,1007.49012 C3049.39923,915.081608 3231.43508,889.691008 3379.64119,933.641745 C3449.97484,954.499291 3711.61905,986.026223 3951.75096,741.723623 C3988.01036,704.834456 4055.63049,641.997399 4197.50386,557.785231 C4261.65173,519.708803 4430.86777,466.768969 4705.15199,398.965729 L50.2469885,1143.07672 Z" id="Onda" fill="#F6F6F6" transform="translate(2377.699488, 900.791297) rotate(9.000000) translate(-2377.699488, -900.791297) "></path>
+                <path d="M118.848012,1064.02647 C424.83891,1100.00486 640.541606,1156.20537 765.956102,1232.62801 C997.80596,1373.90816 1234.36771,1316.68137 1282.58527,1283.98904 C1481.24377,1149.29518 1750.84675,1123.43253 1950.56592,1196.76472 C2601.30596,1435.70121 2845.96354,1020.84839 2981.9819,928.439876 C3118.00026,836.03136 3300.0361,810.640759 3448.24221,854.591497 C3518.57586,875.449043 3780.22008,906.975975 4020.35198,662.673374 C4056.61138,625.784208 4124.23152,562.947151 4266.10488,478.734983 C4330.25275,440.658555 4499.46879,387.718721 4773.75301,319.915481 L118.848012,1064.02647 Z" id="Onda" fill="#EEEEEE" transform="translate(2446.300512, 821.741049) rotate(8.000000) translate(-2446.300512, -821.741049) "></path>
+                <g id="Confeti" transform="translate(1228.000000, 960.000000)">
+                    <circle id="Oval" fill="#B9E976" transform="translate(1833.142031, 308.142031) rotate(-411.000000) translate(-1833.142031, -308.142031) " cx="1833.14203" cy="308.142031" r="6.5"></circle>
+                    <circle id="Oval" fill="#B9E976" transform="translate(1583.759976, 124.759976) rotate(-333.000000) translate(-1583.759976, -124.759976) " cx="1583.75998" cy="124.759976" r="8"></circle>
+                    <circle id="Oval" fill="#B9E976" transform="translate(812.486991, 169.396272) rotate(-320.000000) translate(-812.486991, -169.396272) " cx="812.486991" cy="169.396272" r="4.54012376"></circle>
+                    <circle id="Oval" fill="#B9E976" transform="translate(613.075324, 151.075324) rotate(-289.000000) translate(-613.075324, -151.075324) " cx="613.075324" cy="151.075324" r="9.5"></circle>
+                    <circle id="Oval" fill="#B9E976" transform="translate(5.326550, 235.783727) rotate(-289.000000) translate(-5.326550, -235.783727) " cx="5.32655001" cy="235.783727" r="4.19054804"></circle>
+                    <circle id="Oval" fill="#B9E976" transform="translate(255.393754, 310.669296) rotate(-289.000000) translate(-255.393754, -310.669296) " cx="255.393754" cy="310.669296" r="13.6841598"></circle>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(1719.806892, 216.806892) rotate(-411.000000) translate(-1719.806892, -216.806892) " cx="1719.80689" cy="216.806892" r="15.5047375"></circle>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(2010.949676, 293.511272) rotate(-411.000000) translate(-2010.949676, -293.511272) " cx="2010.94968" cy="293.511272" r="27.3815806"></circle>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(483.511272, 349.511272) rotate(-411.000000) translate(-483.511272, -349.511272) " cx="483.511272" cy="349.511272" r="27.3815806"></circle>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(287.713960, 50.713960) rotate(-411.000000) translate(-287.713960, -50.713960) " cx="287.71396" cy="50.7139599" r="18.2826698"></circle>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(748.393551, 31.393551) rotate(-77.000000) translate(-748.393551, -31.393551) " cx="748.393551" cy="31.3935506" r="9.5"></circle>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(894.963367, 407.963367) rotate(-77.000000) translate(-894.963367, -407.963367) " cx="894.963367" cy="407.963367" r="6.63989581"></circle>
+                    <polygon id="Triangle" fill="#BC06E9" transform="translate(1729.341507, 33.341507) rotate(-134.000000) translate(-1729.341507, -33.341507) " points="1729.34151 20.8415066 1741.84151 45.8415066 1716.84151 45.8415066"></polygon>
+                    <polygon id="Triangle" fill="#BC06E9" transform="translate(487.980527, 19.980527) rotate(-122.000000) translate(-487.980527, -19.980527) " points="487.980527 5.48052673 502.480527 34.4805267 473.480527 34.4805267"></polygon>
+                    <polygon id="Triangle" fill="#BC06E9" transform="translate(384.621684, 197.773340) rotate(-37.000000) translate(-384.621684, -197.773340) " points="384.621684 179.245238 403.149785 216.301441 366.093582 216.301441"></polygon>
+                    <rect id="Rectangle-2" fill="#FE214F" transform="translate(1676.762001, 372.945905) rotate(-225.000000) translate(-1676.762001, -372.945905) " x="1665.74662" y="361.930527" width="22.0307557" height="22.0307557"></rect>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(1719.806892, 216.806892) rotate(-411.000000) translate(-1719.806892, -216.806892) " cx="1719.80689" cy="216.806892" r="15.5047375"></circle>
+                    <polygon id="Triangle" fill="#BC06E9" transform="translate(1729.341507, 33.341507) rotate(-134.000000) translate(-1729.341507, -33.341507) " points="1729.34151 20.8415066 1741.84151 45.8415066 1716.84151 45.8415066"></polygon>
+                    <rect id="Rectangle-2" fill="#FE214F" transform="translate(1676.762001, 372.945905) rotate(-225.000000) translate(-1676.762001, -372.945905) " x="1665.74662" y="361.930527" width="22.0307557" height="22.0307557"></rect>
+                    <rect id="Rectangle-2" fill="#FE214F" transform="translate(718.158905, 332.158905) rotate(-292.000000) translate(-718.158905, -332.158905) " x="706.514247" y="320.514247" width="23.2893166" height="23.2893166"></rect>
+                    <rect id="Rectangle-2" fill="#FE214F" transform="translate(1454.057126, 42.295429) rotate(-292.000000) translate(-1454.057126, -42.295429) " x="1449.40421" y="37.6425096" width="9.30583876" height="9.30583876"></rect>
+                    <rect id="Rectangle-2" fill="#FE214F" transform="translate(135.847779, 155.847779) rotate(-356.000000) translate(-135.847779, -155.847779) " x="129.431919" y="149.431919" width="12.8317207" height="12.8317207"></rect>
+                    <circle id="Oval" fill="#B9E976" transform="translate(2192.759605, 230.759605) rotate(-255.000000) translate(-2192.759605, -230.759605) " cx="2192.7596" cy="230.759605" r="13.6841598"></circle>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(2124.304584, 50.713960) rotate(-255.000000) translate(-2124.304584, -50.713960) " cx="2124.30458" cy="50.7139599" r="18.2826698"></circle>
+                    <circle id="Oval" stroke="#52E3BF" stroke-width="7" transform="translate(2436.847155, 168.847155) rotate(-255.000000) translate(-2436.847155, -168.847155) " cx="2436.84715" cy="168.847155" r="10.489658"></circle>
+                    <polygon id="Triangle" fill="#BC06E9" transform="translate(1972.692197, 128.692197) rotate(-255.000000) translate(-1972.692197, -128.692197) " points="1972.6922 110.164096 1991.2203 147.220299 1954.1641 147.220299"></polygon>
+                    <rect id="Rectangle-2" fill="#FE214F" transform="translate(2251.857792, 354.857792) rotate(-255.000000) translate(-2251.857792, -354.857792) " x="2245.44193" y="348.441932" width="12.8317207" height="12.8317207"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

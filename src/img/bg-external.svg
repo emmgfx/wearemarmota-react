@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1134" height="190" viewBox="0 0 1134 190">
+    <g fill="none" fill-rule="evenodd" transform="translate(-7 2)">
+        <circle cx="1044.192" cy="22.192" r="7.957" fill="#B9E976" transform="rotate(-51 1044.192 22.192)"/>
+        <circle cx="881.586" cy="173.85" r="5.312" fill="#B9E976" transform="rotate(27 881.586 173.85)"/>
+        <circle cx="265.396" cy="152.396" r="4.54" fill="#B9E976" transform="rotate(40 265.396 152.396)"/>
+        <circle cx="164.075" cy="57.075" r="9.5" fill="#B9E976" transform="rotate(71 164.075 57.075)"/>
+        <circle cx="1126.036" cy="78.152" r="11.076" stroke="#52E3BF" stroke-width="7" transform="rotate(-51 1126.036 78.152)"/>
+        <circle cx="260.394" cy="11.394" r="9.5" stroke="#52E3BF" stroke-width="7" transform="rotate(-77 260.394 11.394)"/>
+        <path fill="#BC06E9" d="M958.683 107.358l9.3-26.358 17.367 17.983zM7.684 50.664L24.594 23 39.96 47.593z"/>
+        <path fill="#FE214F" d="M898.289 21.71l-6.712 6.712-6.71-6.711 6.71-6.711zM124.594 157l8.724 21.593-21.593 8.724L103 165.724zM1070.593 157l6.013 14.881-14.882 6.013-6.012-14.882z"/>
+    </g>
+</svg>

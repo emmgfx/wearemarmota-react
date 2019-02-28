@@ -1,0 +1,187 @@
+@charset "utf-8";
+@import "_colors";
+@import "_navigation";
+@import "_features";
+@import "_contact";
+@import "_timeline";
+@import "_mixins";
+
+.mt-50px{
+    margin-top: 50px;
+}
+
+.mt-100px{
+    margin-top: 100px;
+}
+
+.mt-150px{
+    margin-top: 150px;
+}
+
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Muli', sans-serif;
+    color: $color-text-primary;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        overflow: hidden;
+
+        svg{
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+    }
+    &[page=ui-ux],
+    &[page=development],
+    &[page=design],
+    &[page=android]{
+        background-position:
+            center 200px;
+        background-image:
+            url(../img/bg-external.svg);
+    }
+}
+
+.container{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+a{
+    color: inherit;
+
+    &:hover,
+    &:focus,
+    &:active{
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.claim{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.67;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+
+    @media (max-width: 575px){
+        font-size: 25px;
+    }
+
+    .emphasys-subline{
+        display: block;
+        color: $color-accent;
+    }
+
+    .type{
+        @include truncate();
+        display: block;
+        color: $color-accent;
+        visibility: hidden;
+
+        del{
+            text-decoration: none;
+        }
+
+        .claim-caret{
+            color: $color-accent;
+        }
+    }
+}
+
+section{
+    padding: 170px 0;
+
+    @media(max-width: 768px){
+        padding: 85px 0;
+    }
+
+    h3{
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 3.57;
+        letter-spacing: 1.7px;
+        color: $color-accent;
+    }
+
+    h4{
+    	font-size: 35px;
+    	font-weight: bold;
+    	letter-spacing: 4.1px;
+        margin-bottom: 2rem;
+    }
+
+    h3 + h4{
+        margin-top: -.75rem;
+    }
+
+}
+
+section#philosophy{
+    background-image: url(../img/bg-philosophy.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+section#ui-ux{
+    padding-top: 70px;
+}
+
+section#quote{
+    padding: 100px 0;
+    background-image: $gradient-image;
+    color: white;
+
+    blockquote p{
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2.8rem;
+        letter-spacing: .2rem;
+    }
+
+    blockquote cite{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-style: italic;
+        letter-spacing: .2rem;
+        text-align: right;
+        display: block;
+    }
+}
+
+footer{
+    .footer-links{
+        padding: 40px 10px;
+        background-color: $color-text-primary;
+        color: white;
+
+        ul{
+            margin-bottom: 0;
+        }
+    }
+    .footer-copy{
+        padding: 15px;
+        background-color: #3f3f3f;
+        text-align: center;
+        p{
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+            color: $color-text-primary-light;
+        }
+    }
+}

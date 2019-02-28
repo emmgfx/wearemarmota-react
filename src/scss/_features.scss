@@ -1,0 +1,67 @@
+section#features,
+section#features-more{
+
+    &#features{
+        padding: 0;
+    }
+
+    &#features-more{
+        padding-top: 0;
+        background-image: url(../img/bg-end.svg);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        h2{
+            margin-bottom: 5rem;
+        }
+
+        a.return-home{
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: $color-accent;
+        }
+    }
+
+    a.feature-item-wrapper{
+        border-radius: 4px;
+        background-color: white;
+        box-shadow: 0 2px 15px 0 rgba(155, 155, 155, 0.38);
+        transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+        margin-bottom: 30px;
+
+        &:hover{
+            color: $color-accent;
+        	box-shadow: 0 2px 15px 0 rgba(155, 155, 155, 0.38);
+            transform: scale(1.15);
+
+            svg path{
+                fill: $color-accent;
+            }
+        }
+
+        .feature-item{
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2.4px;
+            text-align: center;
+
+            svg{
+                width: 100%;
+                max-width: 56px;
+                path{
+                    transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+                }
+            }
+
+            span{
+                margin-top: 15px;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+
+    }
+
+}

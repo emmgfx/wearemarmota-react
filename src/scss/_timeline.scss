@@ -1,0 +1,209 @@
+@media (min-width: 1000px){
+    div.timeline{
+        position: relative;
+        width: 100%;
+        padding-top: 150px;
+        margin-top: 100px;
+
+        .line{
+            width: 6px;
+            background-color: #979797;
+            position: absolute;
+            top: 150px;
+            left: calc(50% - 3px);
+            height: calc(100% - 150px);
+        }
+
+        .line-start{
+            position: absolute;
+            top: 0;
+            left: calc(50% - 3px);
+            height: 150px;
+            border-left: 6px dashed #979797;
+        }
+
+        ul{
+            width: 100%;
+            li{
+                position: relative;
+                font-size: 25px;
+                font-weight: 600;
+                line-height: 2.0;
+                letter-spacing: 3px;
+                background-color: #f0f0f0;
+                border-radius: 5px;
+                padding: 30px;
+                width: 40%;
+
+                &:hover:after{
+                    transform: scale(1.5);
+                }
+
+                &:nth-child(odd){
+                    left: 50%;
+                    margin-left: calc(-40% - 35px);
+
+                    &:before{
+                        position: absolute;
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 10px 0 10px 20px;
+                        border-color: transparent transparent transparent #f0f0f0;
+                        right: -20px;
+                        top: calc(50% - 10px);
+                    }
+                    &:after{
+                        transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+                        position: absolute;
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background-color: #fe214f;
+                        right: -43px;
+                        top: calc(50% - 8px);
+                        border-radius: 10px;
+                    }
+                }
+
+                &:nth-child(even){
+                    left: 50%;
+                    margin-left: 35px;
+
+                    &:before{
+                        position: absolute;
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 10px 20px 10px 0;
+                        border-color: transparent #f0f0f0 transparent;
+                        left: -20px;
+                        top: calc(50% - 10px);
+                    }
+                    &:after{
+                        transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+                        position: absolute;
+                        content: "";
+                        width: 16px;
+                        height: 16px;
+                        background-color: #fe214f;
+                        left: -43px;
+                        top: calc(50% - 8px);
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .endpoint{
+            position: relative;
+            width: 100%;
+            text-align: center;
+            .end{
+                max-width: 350px;
+                width: 100%;
+                border-radius: 4px;
+                background-image: $gradient-image;
+                box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
+                font-size: 25px;
+                font-weight: bold;
+                line-height: 2.0;
+                letter-spacing: 3px;
+                text-align: center;
+                color: white;
+                padding: 1rem 2rem;
+                margin: 100px auto 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 999px){
+    div.timeline{
+        position: relative;
+        width: 100%;
+        margin-top: 100px;
+
+        .line{
+            width: 6px;
+            background-color: #979797;
+            position: absolute;
+            top: 30px;
+            left: 15px;
+            height: calc(100% - 200px);
+        }
+
+        .line-start{
+            display: none;
+        }
+
+        ul{
+            margin-left: 37px;
+            li{
+                position: relative;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 2.0;
+                letter-spacing: 1px;
+                background-color: #f0f0f0;
+                border-radius: 5px;
+                padding: 15px;
+                width: calc(100% - 25px);
+                margin-left: 50px;
+                margin: 1rem;
+
+                &:before{
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 10px 20px 10px 0;
+                    border-color: transparent #f0f0f0 transparent;
+                    left: -20px;
+                    top: 20px;
+                }
+                &:after{
+                    transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+                    position: absolute;
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    background-color: #fe214f;
+                    left: -43px;
+                    top: 22px;
+                    border-radius: 10px;
+                }
+
+                &:hover:after{
+                    transform: scale(1.5);
+                }
+
+            }
+        }
+
+        .endpoint{
+            position: relative;
+            width: 100%;
+            .end{
+                max-width: 350px;
+                width: 100%;
+                border-radius: 4px;
+                background-image: $gradient-image;
+                box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2);
+                font-size: 25px;
+                font-weight: bold;
+                line-height: 2.0;
+                letter-spacing: 3px;
+                text-align: center;
+                color: white;
+                padding: 1rem 2rem;
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
