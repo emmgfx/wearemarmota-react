@@ -5,6 +5,28 @@ import imgLogoRedPurple from '../img/logo-red-purple.svg';
 import imgLogoRedPurpleXS from '../img/logo-red-purple-xs.svg';
 
 class Header extends Component {
+
+  constructor(props, context) { 
+    super(props, context);
+    
+    this.state = {
+      isNavbarCollapsed: true
+    };
+  }
+  
+  toggleNavbarCollapsed = () => {
+    this.setState(prevState => ({
+      isNavbarCollapsed: !prevState.isNavbarCollapsed
+    }));
+  }
+  
+  navbarCollapseClass = () => {
+      let divClass = "navbar-collapse";
+      if(this.state.isNavbarCollapsed) divClass += " collapse";
+      return divClass;
+  }
+  
+ 
   render() {
     return (
         <React.Fragment>
@@ -17,11 +39,11 @@ class Header extends Component {
                             <img src={imgLogoRedPurpleXS} alt="we are Marmota" className="mobile d-sm-none" />
                         </Link>
 
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button onClick={ (evt) => this.toggleNavbarCollapsed()}className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
-                        <div className="collapse navbar-collapse" id="navbar-menu">
+                        <div className={this.navbarCollapseClass()} id="navbar-menu">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
                                     <Link smooth to="/#top" className="nav-link">Qué hacemos</Link>
