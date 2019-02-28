@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './scss/style.scss';
+import { Link } from "react-router-dom";
+
+import imgGift from '../img/gift.svg';
 
 class Home extends Component {
   render() {
@@ -54,7 +56,7 @@ class Home extends Component {
                         <div className="col-lg-10 ml-auto mr-auto">
                             <div className="row">
                                 <div className="col-6 col-sm-6 col-md-3 col-lg-3">
-                                    <a href="./?page=ui-ux" className="feature-item-wrapper embed-responsive embed-responsive-1by1">
+                                    <Link to="/ui-ux" className="feature-item-wrapper embed-responsive embed-responsive-1by1">
                                         <div className="embed-responsive-item d-flex align-items-center justify-content-center">
                                             <div className="feature-item ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
@@ -63,7 +65,7 @@ class Home extends Component {
                                                 <span>UX/UI</span>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 <div className="col-6 col-sm-6 col-md-3 col-lg-3">
@@ -123,7 +125,7 @@ class Home extends Component {
                             <p>Además, donamos un 3% de los beneficios de cada proyecto a diversas instituciones que llevan a cabo proyectos solidários. Por eso, colaborando con nosotros, tú tambien participas.</p>
                         </div>
                         <div className="col-sm-11 col-md-5 offset-md-2" align="center">
-                            <img src="img/gift.svg" alt="Caja de regalo con corazones" className="img-responsive mt-50px" />
+                            <img src={imgGift} alt="Caja de regalo con corazones" className="img-responsive mt-50px" />
                         </div>
                     </div>
                 </div>
