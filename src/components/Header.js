@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import Headroom from 'headroom.js';
 
 import imgLogoRedPurple from '../img/logo-red-purple.svg';
 import imgLogoRedPurpleXS from '../img/logo-red-purple-xs.svg';
@@ -12,6 +13,14 @@ class Header extends Component {
     this.state = {
       isNavbarCollapsed: true
     };
+    
+    this.header = React.createRef();
+  }
+  
+  componentDidMount(){
+    var headroom  = new Headroom(this.header.current);
+    headroom.offset = 58;
+    headroom.init();
   }
   
   toggleNavbarCollapsed = () => {
@@ -26,11 +35,10 @@ class Header extends Component {
       return divClass;
   }
   
- 
   render() {
     return (
         <React.Fragment>
-            <header className="headroom">
+            <header className="headroom" ref={this.header}>
                 <nav className="navbar navbar-expand-lg navbar-light">
                     <div className="container">
 
