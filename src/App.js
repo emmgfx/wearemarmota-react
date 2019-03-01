@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import Home from './sections/Home';
-import UiUx from './sections/UiUx';
+import Home from './pages/Home';
+import UiUx from './pages/UiUx';
 
 import './scss/style.scss';
 

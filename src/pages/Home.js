@@ -74,7 +74,7 @@ class Home extends Component {
                                 </div>
 
                                 <div className="col-6 col-sm-6 col-md-3 col-lg-3">
-                                    <a href="./?page=development" className="feature-item-wrapper embed-responsive embed-responsive-1by1">
+                                    <Link to="/development" className="feature-item-wrapper embed-responsive embed-responsive-1by1">
                                         <div className="embed-responsive-item d-flex align-items-center justify-content-center">
                                             <div className="feature-item ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
@@ -83,11 +83,11 @@ class Home extends Component {
                                                 <span>Desarrollo</span>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 <div className="col-6 col-sm-6 col-md-3 col-lg-3">
-                                    <a href="./?page=design" className="feature-item-wrapper embed-responsive embed-responsive-1by1">
+                                    <Link to="/design" className="feature-item-wrapper embed-responsive embed-responsive-1by1">
                                         <div className="embed-responsive-item d-flex align-items-center justify-content-center">
                                             <div className="feature-item">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
@@ -99,11 +99,11 @@ class Home extends Component {
                                                 <span>Diseño</span>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 <div className="col-6 col-sm-6 col-md-3 col-lg-3">
-                                    <a href="./?page=android" className="feature-item-wrapper embed-responsive embed-responsive-1by1">
+                                    <Link to="/android" className="feature-item-wrapper embed-responsive embed-responsive-1by1">
                                         <div className="embed-responsive-item d-flex align-items-center justify-content-center">
                                             <div className="feature-item ">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
@@ -112,7 +112,7 @@ class Home extends Component {
                                                 <span>Android</span>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
