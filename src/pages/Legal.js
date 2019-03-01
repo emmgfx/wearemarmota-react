@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 
-import MoreFeatures from '../components/MoreFeatures';
-
-import imgDesignColorChart from '../img/support/design_color-chart.svg';
-
 class Legal extends Component {
   
     componentDidMount() {
