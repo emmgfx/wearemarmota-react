@@ -6,6 +6,10 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import UiUx from './pages/UiUx';
+import Android from './pages/Android';
+import Development from './pages/Development';
+import Design from './pages/Design';
+import Legal from './pages/Legal';
 
 import './scss/style.scss';
 
@@ -18,6 +22,10 @@ class App extends Component {
                 <Header />
                 <Route exact path="/" component={Home} />
                 <Route exact path="/ui-ux" component={UiUx} />
+                <Route exact path="/android" component={Android} />
+                <Route exact path="/development" component={Development} />
+                <Route exact path="/design" component={Design} />
+                <Route exact path="/legal" component={Legal} />
                 <Footer />
                 
             </React.Fragment>
