@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import Typist from 'react-typist';
 
 import Contact from '../components/Contact';
 
@@ -45,16 +46,19 @@ class Home extends Component {
             </div>
 
             <div id="top" className="claim">
-                <p>
-                    Diseñamos y <wbr /> desarrollamos
-                    <span className="type">
-                        <del>experiencias digitales<ins data-ins="3"></ins></del><span className="sr-only">, </span>
-                        <del>aplicaciones móviles<ins data-ins="3"></ins></del><span className="sr-only">, </span>
-                        <del>páginas web<ins data-ins="3"></ins></del><span className="sr-only">, </span>
-                        <del>imagen corporativa<ins data-ins="3"></ins></del><span className="sr-only"> y </span>
-                        <del>tu proyecto<ins data-ins="3"></ins></del><span className="sr-only">.</span>
-                    </span>
-                </p>
+                Diseñamos y <wbr /> desarrollamos
+                
+                <Typist>
+                    <span>experiencias digitales</span>
+                    <Typist.Backspace count={22} delay={500} />
+                    <span>aplicaciones móviles</span>
+                    <Typist.Backspace count={20} delay={500} />
+                    <span>páginas web</span>
+                    <Typist.Backspace count={11} delay={500} />
+                    <span>imagen corporativa</span>
+                    <Typist.Backspace count={18} delay={500} />
+                    <span>tu proyecto</span>
+                </Typist>
             </div>
 
             <section id="features">
