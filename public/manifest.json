@@ -3,32 +3,32 @@
     "name": "we are Marmota",
     "icons": [
         {
-            "src": "assets/img/icons/ic_launcher/res/mipmap-hdpi/ic_launcher.png",
+            "src": "ic_launcher/res/mipmap-hdpi/ic_launcher.png",
             "type": "image/png",
             "sizes": "72x72"
         },
         {
-            "src": "assets/img/icons/ic_launcher/res/mipmap-mdpi/ic_launcher.png",
+            "src": "ic_launcher/res/mipmap-mdpi/ic_launcher.png",
             "type": "image/png",
             "sizes": "48x48"
         },
         {
-            "src": "assets/img/icons/ic_launcher/res/mipmap-xhdpi/ic_launcher.png",
+            "src": "ic_launcher/res/mipmap-xhdpi/ic_launcher.png",
             "type": "image/png",
             "sizes": "96x96"
         },
         {
-            "src": "assets/img/icons/ic_launcher/res/mipmap-xxhdpi/ic_launcher.png",
+            "src": "ic_launcher/res/mipmap-xxhdpi/ic_launcher.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "assets/img/icons/ic_launcher/res/mipmap-xxxhdpi/ic_launcher.png",
+            "src": "ic_launcher/res/mipmap-xxxhdpi/ic_launcher.png",
             "type": "image/png",
             "sizes": "192x192"
         }
     ],
-    "start_url": "index.php?launcher=true",
+    "start_url": "/",
     "background_color": "#9800d4",
     "theme_color": "#9800d4",
     "display": "standalone"
