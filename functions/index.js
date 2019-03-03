@@ -44,6 +44,10 @@ function sendEmail(body) {
             auth: {
                 user: functions.config().nodemailer.from,
                 pass: functions.config().nodemailer.password
+            },
+            tls: {
+                // https://github.com/nodemailer/nodemailer/issues/342
+                rejectUnauthorized: false
             }
         });
 
