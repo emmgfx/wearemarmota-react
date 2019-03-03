@@ -14,7 +14,7 @@ class Contact extends Component {
                         <p>¡Encantados de conocerte!</p>
                     </div>
                     <div className="col-md-10 offset-md-1 col-lg-6 offset-lg-1">
-                        <form id="contact" method="post" action="contact-send.php">
+                        <form id="contact" method="post" action="https://us-central1-wearemarmota.cloudfunctions.net/contactForm">
                             <div className="form-group">
                                 <label>Nombre</label>
                                 <input type="text" name="name" className="form-control" required />
