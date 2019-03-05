@@ -2,16 +2,17 @@ const functions = require('firebase-functions');
 const nodemailer = require('nodemailer');
 const rp = require('request-promise');
 const validator = require('validator');
+const cors = require('cors')({origin: true});
 
 exports.contactForm = functions.https.onRequest((request, response) => {
-    
-    sendEmail(request.body)
-        .then(()=> { 
-            response.status(200).send({success: true});
-        }).catch((reject) => {
-            response.status(500).send({success: false, error: reject.message});
-        });
-        
+    return cors(request, response, () => {
+        sendEmail(request.body)
+            .then(()=> { 
+                response.status(200).send({success: true});
+            }).catch((reject) => {
+                response.status(500).send({success: false, error: reject.message});
+            });
+    });
 });
 
 function sendEmail(body) {
