@@ -52,7 +52,7 @@ section#contact{
                         inset 0 0 0 30px rgba(255, 255, 255, 0);
             border: none;
             padding: 8px;
-            margin-top: 2rem;
+            margin-top: 1rem;
             text-transform: uppercase;
             cursor: pointer;
             transition: all .1s;
@@ -80,11 +80,6 @@ section#contact{
             &:focus{
                 outline: none;
             }
-        }
-
-        .grecaptcha-badge{
-            margin-top: 1.5rem;
-            box-shadow: #b3b3b3 0px 1px 2px !important;
         }
     }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { load } from 'recaptcha-v3'
 
 class Contact extends Component {
     
@@ -12,6 +13,14 @@ class Contact extends Component {
             email: '',
             message: ''
         }
+        
+        load('6LfxspUUAAAAAMHRpQ5-RR3Qo8wQCliwgVcAeHih', {autoHideBadge: true}).then((recaptcha) => {
+            this.recaptcha = recaptcha;
+            recaptcha.execute('action').then((token) => {
+                console.log(token);
+            })
+        })
+
     }
     
     handleChange = (e) => {
@@ -85,13 +94,15 @@ class Contact extends Component {
                                     <label>Correo electrónico</label>
                                     <input type="email" name="email" value={this.state.email} onChange={ this.handleChange.bind(this) } className="form-control" required />
                                 </div>
-                                <div className="form-group">
+                                <div className="form-group mb-0">
                                     <label>Tu mensaje</label>
                                     <textarea className="form-control" name="message" rows="5" value={this.state.message}  onChange={ this.handleChange.bind(this) } required></textarea>
                                 </div>
+                                <small className="m-0">
+                                    This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                                </small>
                                 <div className="form-group" align="right">
                                     <button type="submit" className="btn-contact">{ this.state.sending ? 'Enviando...' : 'Enviar' }</button>
-                                    <div id="grecaptcha"></div>
                                 </div>
                             </form>
                         </div>
