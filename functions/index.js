@@ -3,17 +3,51 @@ const nodemailer = require('nodemailer');
 const rp = require('request-promise');
 const validator = require('validator');
 const cors = require('cors')({origin: true});
+const Recaptcha = require('recaptcha-verify');
 
 exports.contactForm = functions.https.onRequest((request, response) => {
     return cors(request, response, () => {
-        sendEmail(request.body)
-            .then(()=> { 
+        
+        checkReCAPTCHA(request.body).then(() => {
+
+            sendEmail(request.body).then(() => { 
                 response.status(200).send({success: true});
             }).catch((reject) => {
                 response.status(500).send({success: false, error: reject.message});
             });
+
+        }).catch((reject) => {
+            
+            response.status(500).send({success: false, error: reject.message});
+            
+        });
+
     });
 });
+
+function checkReCAPTCHA(body){
+    return new Promise((success, reject) => {
+
+        let recaptcha = new Recaptcha({
+            secret: functions.config().recaptcha.secret_key,
+            verbose: true
+        });
+
+        if(!body.recaptcha_response){ reject(new Error("No recaptcha_response")); }
+
+        recaptcha.checkResponse(body.recaptcha_response, (error, response) => {
+            if(error){
+                reject(new Error(error.message));
+            }
+            if(response.success){
+                success();
+            }else{
+                reject(new Error("Invalid reCAPTCHA"));
+            }
+        });
+
+    });
+}
 
 function sendEmail(body) {
     
