@@ -23,8 +23,4 @@ $(function() {
     animationPaths.targets = ['#drawing g > g > path'];
     anime(animationPaths);
 
-    $(window).on('scroll', function(){
-        $('.navbar-collapse').collapse('hide');
-    });
-
 });
