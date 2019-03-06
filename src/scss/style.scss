@@ -27,19 +27,8 @@ body{
     background-repeat: no-repeat;
     background-position: top center;
 
-    .bg{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: -1;
-        overflow: hidden;
-
-        svg{
-            left: 50%;
-            position: relative;
-            transform: translateX(-50%);
-        }
+    &[page=home]{
+        background-image: url(../img/bg-home.svg);
     }
     &[page=ui-ux],
     &[page=development],
