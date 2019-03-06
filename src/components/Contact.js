@@ -10,9 +10,9 @@ class Contact extends Component {
         this.state = {
             recaptcha_response: false,
             sending: false,
-            name: 'test',
-            email: 'test@test.test',
-            message: 'test'
+            name: '',
+            email: '',
+            message: ''
         }
         
         loadRecaptcha('6LfxspUUAAAAAMHRpQ5-RR3Qo8wQCliwgVcAeHih', {autoHideBadge: true}).then((recaptcha) => {
