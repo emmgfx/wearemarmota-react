@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { load } from 'recaptcha-v3'
+import { load as loadRecaptcha} from 'recaptcha-v3'
 
 class Contact extends Component {
     
@@ -8,16 +8,19 @@ class Contact extends Component {
         super(props);
         
         this.state = {
+            recaptcha_response: false,
             sending: false,
-            name: '',
-            email: '',
-            message: ''
+            name: 'test',
+            email: 'test@test.test',
+            message: 'test'
         }
         
-        load('6LfxspUUAAAAAMHRpQ5-RR3Qo8wQCliwgVcAeHih', {autoHideBadge: true}).then((recaptcha) => {
+        loadRecaptcha('6LfxspUUAAAAAMHRpQ5-RR3Qo8wQCliwgVcAeHih', {autoHideBadge: true}).then((recaptcha) => {
             this.recaptcha = recaptcha;
             recaptcha.execute('action').then((token) => {
-                console.log(token);
+                this.setState({
+                    recaptcha_response: token
+                });
             })
         })
 
@@ -44,6 +47,7 @@ class Contact extends Component {
     handleSubmit = (event) => {
         let endpoint = 'https://us-central1-wearemarmota.cloudfunctions.net/contactForm';
         let body = {
+            recaptcha_response: this.state.recaptcha_response,
             name: this.state.name,
             email: this.state.email,
             message: this.state.message
@@ -65,6 +69,9 @@ class Contact extends Component {
             })
             .catch((error) => {
                 this.setState({ sending: false });
+                if(error.response){
+                    console.log(error.response);
+                }
                 alert('Error al enviar el email');
             });
 
@@ -102,7 +109,13 @@ class Contact extends Component {
                                     This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
                                 </small>
                                 <div className="form-group" align="right">
-                                    <button type="submit" className="btn-contact">{ this.state.sending ? 'Enviando...' : 'Enviar' }</button>
+                                    <button type="submit" className="btn-contact" disabled={!this.state.recaptcha_response}>
+                                        {
+                                            !this.state.recaptcha_response ?
+                                            'Validando reCAPTCHA' :
+                                            this.state.sending ? 'Enviando...' : 'Enviar'
+                                        }
+                                    </button>
                                 </div>
                             </form>
                         </div>
