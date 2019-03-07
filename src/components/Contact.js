@@ -8,22 +8,13 @@ class Contact extends Component {
         super(props);
         
         this.state = {
-            recaptcha_response: false,
+            recaptcha_validating: false,
+            recaptcha_response: '',
             sending: false,
             name: '',
             email: '',
             message: ''
         }
-        
-        loadRecaptcha('6LfxspUUAAAAAMHRpQ5-RR3Qo8wQCliwgVcAeHih', {autoHideBadge: true}).then((recaptcha) => {
-            this.recaptcha = recaptcha;
-            recaptcha.execute('action').then((token) => {
-                this.setState({
-                    recaptcha_response: token
-                });
-            })
-        })
-
     }
     
     handleChange = (e) => {
@@ -45,6 +36,26 @@ class Contact extends Component {
     }
     
     handleSubmit = (event) => {
+        
+        this.setState({
+            recaptcha_validating: true
+        });
+        
+        loadRecaptcha('6LfxspUUAAAAAMHRpQ5-RR3Qo8wQCliwgVcAeHih', {autoHideBadge: true}).then((recaptcha) => {
+            this.recaptcha = recaptcha;
+            recaptcha.execute('action').then((token) => {
+                this.setState({
+                    recaptcha_response: token,
+                    recaptcha_validating: false,
+                });
+                this.submit();
+            })
+        })
+        
+        event.preventDefault();
+    }
+    
+    submit = () => {
         let endpoint = 'https://us-central1-wearemarmota.cloudfunctions.net/contactForm';
         let body = {
             recaptcha_response: this.state.recaptcha_response,
@@ -74,10 +85,7 @@ class Contact extends Component {
                 }
                 alert('Error al enviar el email');
             });
-
-        event.preventDefault();
     }
-
 
     render() {
         return (
@@ -109,9 +117,9 @@ class Contact extends Component {
                                     This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.
                                 </small>
                                 <div className="form-group" align="right">
-                                    <button type="submit" className="btn-contact" disabled={!this.state.recaptcha_response}>
+                                    <button type="submit" className="btn-contact" disabled={this.state.recaptcha_validating || this.state.sending}>
                                         {
-                                            !this.state.recaptcha_response ?
+                                            this.state.recaptcha_validating ?
                                             'Validando reCAPTCHA' :
                                             this.state.sending ? 'Enviando...' : 'Enviar'
                                         }
