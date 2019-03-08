@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+@import "~bootstrap/scss/bootstrap";
 @import "_colors";
 @import "_navigation";
 @import "_features";
@@ -17,7 +19,6 @@
 .mt-150px{
     margin-top: 150px;
 }
-
 
 body{
     -webkit-font-smoothing: antialiased;
