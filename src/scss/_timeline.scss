@@ -55,7 +55,7 @@
                         top: calc(50% - 10px);
                     }
                     &:after{
-                        transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+                        transition: all .4s cubic-bezier(0, 1, 1, 1);
                         position: absolute;
                         content: "";
                         width: 16px;
@@ -83,7 +83,7 @@
                         top: calc(50% - 10px);
                     }
                     &:after{
-                        transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+                        transition: all .4s cubic-bezier(0, 1, 1, 1);
                         position: absolute;
                         content: "";
                         width: 16px;
@@ -166,7 +166,7 @@
                     top: 20px;
                 }
                 &:after{
-                    transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+                    transition: all .4s cubic-bezier(0, 1, 1, 1);
                     position: absolute;
                     content: "";
                     width: 16px;

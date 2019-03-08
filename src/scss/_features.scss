@@ -28,7 +28,7 @@ section#features-more{
         border-radius: 4px;
         background-color: white;
         box-shadow: 0 2px 15px 0 rgba(155, 155, 155, 0.38);
-        transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+        transition: all .4s cubic-bezier(0, 1, 1, 1);
         margin-bottom: 30px;
 
         &:hover{
@@ -51,7 +51,7 @@ section#features-more{
                 width: 100%;
                 max-width: 56px;
                 path{
-                    transition: all .4s cubic-bezier(0.67, -0.35, 0.23, 1.5);
+                    transition: all .4s cubic-bezier(0, 1, 1, 1);
                 }
             }
 
