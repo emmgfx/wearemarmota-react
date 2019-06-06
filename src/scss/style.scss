@@ -34,7 +34,8 @@ body{
     &[page=ui-ux],
     &[page=development],
     &[page=design],
-    &[page=android]{
+    &[page=android],
+    &[page=not-found]{
         background-position:
             center 200px;
         background-image:
@@ -128,6 +129,14 @@ section#philosophy{
 
 section#ui-ux{
     padding-top: 70px;
+}
+
+section#not-found{
+    padding-top: 70px;
+
+    a{
+        color: $color-accent;
+    }
 }
 
 section#quote{
