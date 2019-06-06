@@ -10,6 +10,7 @@ import Android from './pages/Android';
 import Development from './pages/Development';
 import Design from './pages/Design';
 import Legal from './pages/Legal';
+import NotFound from './pages/NotFound';
 
 import './scss/style.scss';
 
@@ -27,7 +28,15 @@ class App extends Component {
                         <Route exact path="/development" component={Development} />
                         <Route exact path="/design" component={Design} />
                         <Route exact path="/legal" component={Legal} />
-                        <Route component={Home} />
+                        <Route component={NotFound} status={404} />
+                        {/* <Route
+                            render={({ staticContext }) => {
+                                if (staticContext) {
+                                    staticContext.statusCode = 404;
+                                }
+                                return <NotFound />
+                            }}
+                        /> */}
                     </Switch>
                     <Footer />
                     
