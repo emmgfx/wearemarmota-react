@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Typist from 'react-typist';
+import { Helmet } from 'react-helmet';
 
 import Contact from '../components/Contact';
 
@@ -20,6 +21,11 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
+
+                <Helmet>
+                    <title>we are Marmota</title>
+                </Helmet>
+
                 <div id="top" className="claim">
                     Diseñamos y <wbr /> desarrollamos
                     

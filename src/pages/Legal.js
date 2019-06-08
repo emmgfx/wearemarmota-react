@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 
 class Legal extends Component {
   
@@ -21,6 +22,10 @@ class Legal extends Component {
         
         return (
             <React.Fragment>
+
+            <Helmet>
+                <title>Aviso legal - we are Marmota</title>
+            </Helmet>
 
             <section className="pt-1">
                 <div className="container">

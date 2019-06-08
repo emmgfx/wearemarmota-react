@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 
 import MoreFeatures from '../components/MoreFeatures';
 
@@ -18,6 +19,11 @@ class Design extends Component {
     render() {
         return (
             <React.Fragment>
+
+            <Helmet>
+                <title>Diseño - we are Marmota</title>
+            </Helmet>
+
                 <div className="claim">
                     <p>
                         Conoce nuestro <wbr /> trabajo en

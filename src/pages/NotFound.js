@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FeaturesMore from '../components/MoreFeatures';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 class NotFound extends Component {
   
@@ -17,6 +18,11 @@ class NotFound extends Component {
                 
         return (
             <React.Fragment>
+
+                <Helmet>
+                    <title>Página no encontrada - we are Marmota</title>
+                </Helmet>
+
                 <section id="not-found" className="">
                     <div className="container text-center">
                         <h2 className="mb-5">Página no encontrada <span role="img" aria-label="Emoticono">😓</span></h2>
