@@ -19,7 +19,7 @@ class NotFound extends Component {
             <React.Fragment>
                 <section id="not-found" className="">
                     <div className="container text-center">
-                        <h2 className="mb-5">Página no encontrada 😓</h2>
+                        <h2 className="mb-5">Página no encontrada <span role="img" aria-label="Emoticono">😓</span></h2>
                         <p>La página que buscas ya no está aquí o nunca lo ha estado.</p>
                         <p>Puedes <Link to="/">volver a la home</Link> o ver el resto de secciones.</p>
                     </div>
