@@ -22,21 +22,15 @@ class App extends Component {
                     
                     <Header />
                     <Switch>
-                        <Route exact path="/" component={Home} />
+                        <Route exact path="/" render={({ location }) => {
+                            return !location.search ? <Home /> : <NotFound />;
+                        }} />
                         <Route exact path="/ui-ux" component={UiUx} />
                         <Route exact path="/android" component={Android} />
                         <Route exact path="/development" component={Development} />
                         <Route exact path="/design" component={Design} />
                         <Route exact path="/legal" component={Legal} />
                         <Route component={NotFound} status={404} />
-                        {/* <Route
-                            render={({ staticContext }) => {
-                                if (staticContext) {
-                                    staticContext.statusCode = 404;
-                                }
-                                return <NotFound />
-                            }}
-                        /> */}
                     </Switch>
                     <Footer />
                     
