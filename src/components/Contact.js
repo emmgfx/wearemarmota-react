@@ -102,15 +102,15 @@ class Contact extends Component {
                         <div className="col-md-10 offset-md-1 col-lg-6 offset-lg-1">
                             <form method="post" onSubmit={this.handleSubmit}>
                                 <div className="form-group">
-                                    <label for="name">Nombre</label>
+                                    <label htmlFor="name">Nombre</label>
                                     <input type="text" id="name" name="name" value={this.state.name} onChange={ this.handleChange.bind(this) } className="form-control" required />
                                 </div>
                                 <div className="form-group">
-                                    <label for="email">Correo electrónico</label>
+                                    <label htmlFor="email">Correo electrónico</label>
                                     <input type="email" id="email" name="email" value={this.state.email} onChange={ this.handleChange.bind(this) } className="form-control" required />
                                 </div>
                                 <div className="form-group mb-0">
-                                    <label for="message">Tu mensaje</label>
+                                    <label htmlFor="message">Tu mensaje</label>
                                     <textarea className="form-control" id="message" name="message" rows="5" value={this.state.message}  onChange={ this.handleChange.bind(this) } required></textarea>
                                 </div>
                                 <small className="m-0">
